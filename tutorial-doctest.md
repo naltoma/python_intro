@@ -82,7 +82,7 @@ def factR(n):
     >>> factR(3) > 0
     True
     >>> result = factR(3)
-    >>> result < 0
+    >>> result > 0
     True
 
     例2: 「factR(3) の結果が0より大きい数値であり、かつ、int型であること」を検証するテストコード。
