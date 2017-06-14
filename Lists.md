@@ -96,7 +96,7 @@ love
 
 <hr>
 
-## <a name="list_methods">リスト操作（図5.4）</a>
+## <a name="list_methods">リスト操作（図5.4＋α）</a>
 - リスト同士の結合（+演算子）
 ```
 >>> list_ex3 = [1, 2, 3]
@@ -158,6 +158,13 @@ love
 >>> list_ex3.reverse()
 >>> print(list_ex3)
 [6, 5, 4, 3, 2, 1]
+```
+- リスト要素の検索
+```
+>>> 3 in list_ex3
+True
+>>> 10 in list_ex3
+False
 ```
 
 <hr>
