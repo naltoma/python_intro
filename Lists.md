@@ -17,7 +17,8 @@
   - オブジェクト**全体**なら、``=``を使って紐付け直す（代入し直す）ことが可能。
 - 不変（変更できない）オブジェクトの例
   - strings, tuples
-    ```
+
+```
 # strオブジェクトで一部を変更しようとしても、出来ないことの確認。
 >>> name = 'naltoma'
 >>> name[0]
@@ -26,11 +27,12 @@
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'str' object does not support item assignment
+
 # 変数を新しく assign (紐付け) し直すことは可能。
 >>> name = 'hoge'
 >>> print(name)
 hoge
-    ```
+```
 
 - 可変（変更できる）オブジェクトの例
   - lists (今回の対象)
@@ -208,7 +210,7 @@ print(l1)
 - リストには任意のオブジェクトを含めることができる。
   - 教科書の図5.1〜5.3は「リストが別のリストを参照している」場合に、片方のリストへの操作が別リストにも影響を及ぼすことを可視化している例。
 
-![図5.2: univs1はtechsリストとivysリストを参照しているので、techsリストを修正するとその影響を受ける。univs2は他のリストを参照していないので、影響を受けない。](./figs/fig5.2png)
+![図5.2: univs1はtechsリストとivysリストを参照しているので、techsリストを修正するとその影響を受ける。univs2は他のリストを参照していないので、影響を受けない。](https://raw.githubusercontent.com/naltoma/python_intro/master/figs/fig5.2.png)
 
 ```
 # 2つのリスト techs, ivys を用意。
@@ -273,6 +275,7 @@ print(squares)
 ```
 
 <hr>
+
 ## <a name="ref">参考サイト</a>
 - [チュートリアル, リスト型 (list)](http://docs.python.jp/3/tutorial/introduction.html#lists)
 - [チュートリアル, リストの内包表記](http://docs.python.jp/3/tutorial/datastructures.html#list-comprehensions)
