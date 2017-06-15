@@ -71,6 +71,21 @@ target.txtには3つの段落が含まれています。
       - どの処理を関数として定義するかは自由。
       - 引数・戻り値の設定に注意。例えば、引数として渡していないにも関わらず、関数内から外部の変数へアクセスするような書き方は減点対象。
     - docstring形式でドキュメントを書くこと。（参考: [tic_tac_toe.py](https://github.com/naltoma/python_intro/blob/master/report/tic_tac_toe.py)）
+- ヒント
+  - スペースを区切り文字として単語集合に切り出すには、[str.split](https://docs.python.jp/3/library/stdtypes.html#str.split)を使おう。以下、実行例。
+
+```
+>>> hoge = 'Python is a widely'
+>>> hoge
+'Python is a widely'
+>>> hoge.split(' ')
+['Python', 'is', 'a', 'widely']
+>>> fuga = hoge.split(' ')
+>>> fuga
+['Python', 'is', 'a', 'widely']
+>>> len(fuga)
+4
+```
 
 <hr>
 
