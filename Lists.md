@@ -3,7 +3,7 @@
 - 教科書 Chapter 5.2, Lists and Mutability
 - ＜目次＞
   - <a href="#mutable">Immutable vs. Mutable (不変 vs 可変)</a>
-  - <a href="#definition">Definition（定義）</a>
+  - <a href="#definition">リストの定義とリスト型オブジェクトの作成方法</a>
   - <a href="#list_methods">リスト操作（図5.4）</a>
   - <a href="#note_clone">リスト操作時の注意点（chap 5.2.1 cloning)</a>
   -  <a href="#list_includings">リスト参照を含むリスト（図5.1〜5.3）</a>
@@ -39,7 +39,7 @@ hoge
 
 <hr>
 
-## <a name="definition">Definition (定義)</a>
+## <a name="definition">リストの定義とリスト型オブジェクトの作成方法</a>
 - リストとは「順序付けられたシーケンス集合」。オブジェクトは任意の要素を取りうる。リスト内の各objectはindexにより紐付けられる。
   - リストを作るには、大別して次の2通りの手続きで行う。
     - (1) リストとして作成したいオブジェクトをカンマ(,)で列挙し、``[``〜``]``で囲う。
