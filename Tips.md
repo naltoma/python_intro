@@ -13,11 +13,12 @@
     - [公式ドキュメント](https://docs.python.org/3/) で strオブジェクトを調べる。（どんなキーワードで調べるのが良いだろうか？）
       - [strオブジェクトについて](https://docs.python.org/3/library/string.html#module-string)
       - [標準オブジェクトについて](https://docs.python.org/3/library/stdtypes.html?#string-methods)
-- 主な調べ方3
+- 主な調べ方3:
   - 該当オブジェクトについて、どんな関数が用意されているかを調べる
-    - 例えばstrオブジェクトについて調べたい場合。
-      1. インタプリタ上でstrオブジェクトを保存した変数を用意する。ここでは``temp = 'hoge'``と保存したとする。
-      2. インタプリタ上で「変数名.」と入力した状態でTABキーで補完しようとすると、どのような関数が用意されてるかの一覧が出力される。前述の例に合わせて、``temp.``まで入力してTABキーを押すと次のように出力される。一覧によると、例えば「capitalize(」という関数が用意されているらしい。この関数について調べたいなら ``help(temp.capitalize) ``として、help()を利用しよう。
+    - インタプリタの場合
+      - 例えばstrオブジェクトについて調べたい場合。
+        1. インタプリタ上でstrオブジェクトを保存した変数を用意する。ここでは``temp = 'hoge'``と保存したとする。
+        2. インタプリタ上で「変数名.」と入力した状態でTABキーで補完しようとすると、どのような関数が用意されてるかの一覧が出力される。前述の例に合わせて、``temp.``まで入力してTABキーを押すと次のように出力される。一覧によると、例えば「capitalize(」という関数が用意されているらしい。この関数について調べたいなら ``help(temp.capitalize) ``として、help()を利用しよう。
 
 ```
 >>> temp = 'hoge'
@@ -60,3 +61,7 @@ capitalize(...) method of builtins.str instance
     Return a capitalized version of S, i.e. make the first character
     have upper case and the rest lower case.
 ```
+
+- 主な調べ方3-2:
+  - PyCharmの場合
+    - ファイル編集中に「変数名.」まで記述した時点で、その変数に保存しているオブジェクトが利用できる関数等の一覧が簡易表示される。
