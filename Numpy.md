@@ -83,12 +83,14 @@ print('固有ベクトル:\n{0}'.format(eigenvectors))
 ```
 
 <hr>
+
 ## <a name="other">よく使う機能: 0行列、1行列、対角行列</a>
 - 0行列: np.zeros()
 - 1行列: np.ones()
 - 対角行列: np.eye(), np.diag()
 
 <hr>
+
 ## <a name="ref">参考サイト</a>
 - [Numpy公式チュートリアル](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 - [私訳「暫定的 NumPy チュートリアル」](http://naoyat.hatenablog.jp/entry/2011/12/29/021414) by naoya_t@hatenablog

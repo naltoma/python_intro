@@ -9,6 +9,7 @@
   - <a href="#ref">参考サイト</a>
 
 <hr>
+
 ## <a name="definition">Definition (定義)</a>
 - 呼称
   - dict型オブジェクト: dict, 辞書型オブジェクト、辞書
@@ -69,6 +70,7 @@ Jan
 ```
 
 <hr>
+
 ## <a name="dict_methods">dict操作（図5.10）</a>
 |dict型オブジェクトへの操作|操作の意味|
 |-:|:-|
@@ -81,6 +83,8 @@ Jan
 |``d[k] = value``|dict型オブジェクトdにおいて、キーkで参照できる値をvに紐付ける。既に存在する場合には置き換えられる（上書きされる）。|
 |``del d[k]``|dict型オブジェクトdにおいて、キーkを削除する。（kに紐付けられていたvalueも削除される）|
 |``for k in d``|dict型オブジェクトdに対して反復処理をする。|
+
+<hr>
 
 ## <a name="looping">dictに対するfor文の例</a>
 - tupleやlistと異なり、dictは「key:value」の組で1要素を表現している。この要素をkey,valueに取って反復処理させるには次のように書こう。
@@ -107,5 +111,6 @@ key = Feb, value= 2
 - 上記以外にも、``d.keys()``でキー一覧を用意し、それを使って反復処理参照する等、同じループ処理を書くにしても様々な書き方があります。
 
 <hr>
+
 ## <a name="ref">参考サイト</a>
 - [公式ドキュメント: Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
