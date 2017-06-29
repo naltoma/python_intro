@@ -74,6 +74,7 @@ petal length: average = 3.7586666666666693, standard deviation = 1.7585291834055
   - [標準偏差の求め方](https://en.wikipedia.org/wiki/Standard_deviation#Uncorrected_sample_standard_deviation)
   - 平方根は[math.sqrt](https://docs.python.jp/3/library/math.html#power-and-logarithmic-functions)を利用しよう。
 - 条件
+  - **使用して良い外部モジュールは、上記で示したもののみとする。（csv, math.sqrt以外の外部モジュールを使うのは駄目）**
   - 実装について。
     - スクリプトファイル名は「report6.py」とすること。
     - 最低1つは関数定義して利用すること。
