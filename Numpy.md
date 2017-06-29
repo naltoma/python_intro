@@ -1,10 +1,18 @@
 # Numpyを使ったベクトル・行列演算入門
 
 - ＜目次＞
+  - <a href="#install">Numpyのインストール</a>
   - <a href="#howto">共通した流れ</a>
   - <a href="#example">具体例: 行列の用意、スカラーと行列の演算、行列同士の足し算、転置、行列積、行列式、逆行列、固有値、固有ベクトル</a>
   - <a href="#other">よく使う機能: 0行列、1行列、対角行列</a>
   - <a href="#ref">参考サイト</a>
+
+<hr>
+
+## <a name="install">Numpyのインストール</a>
+```
+pip3 install numpy
+```
 
 <hr>
 
