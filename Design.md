@@ -20,7 +20,7 @@
       - 分からないところは、更に分割できないか考える
     - (2) 個々のサブ問題を個別に解く。
       - これ以上分割できない≒最小の部品なら、教科書・授業で習っているはず（該当部分を復習）
-      - <font color="red">今回追加: 分割した要素を関数として設計する。（＝関数名、入力、出力を検討する）</font>
+      - <span style="color:red">今回追加: 分割した要素を関数として設計する。（＝関数名、入力、出力を検討する）</span>
     - (3) それらの組み合わせ方を考える。
   - 別の視点
     - [シラバスの「授業内容と方法」](https://tiglon.jim.u-ryukyu.ac.jp/portal/Public/Syllabus/SyllabusSearchStart.aspx?lct_year=2017&lct_cd=600625001&je_cd=1)
