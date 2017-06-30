@@ -17,9 +17,9 @@
 
 ## <a name="abst">概要</a>
 - Testing is the process of running a program to try and ascertain whether or not it works as intended.
-  - プログラムが想定通りに動くことを検証するプロセスのこと（検証するためにプログラムを走らせる行程）を**Testing（テスト）**と呼ぶ。
+  - プログラムが想定通りに動くことを検証するプロセスのこと（検証するためにプログラムを走らせる行程）を **Testing（テスト）** と呼ぶ。
 - Debugging is the process of trying to fix a program that you already know does not work as intended.
-  - 想定通りに動かないことが判明しているプログラムを修正するプロセスを**debugging（デバッグ）**と呼ぶ。
+  - 想定通りに動かないことが判明しているプログラムを修正するプロセスを **debugging（デバッグ）** と呼ぶ。
 - 理想的には、
   - テストとデバッグは、プログラムが組み上がってから考えるのではなく、プログラムを設計しながら（テストやデバッグが）やりやすくなるように考える。
   - ヒント
