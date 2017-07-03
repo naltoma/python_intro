@@ -162,14 +162,13 @@
 
 ### <a name="ex7.6">演習7.6: ドキュメントとユニットテストの作成。
 - 補足
-  - 演習7.5までのコードを week11.py という名前で保存し、作成した全ての関数について簡易説明（ドキュメント）をdocstringにて書け。
+  - 演習7.5までのコードを ex7.py という名前で保存し、作成した全ての関数について簡易説明（ドキュメント）をdocstringにて書け。
     - (a)関数についての1行概要、(b)引数、(c)戻り値について記述すること。
-    - 例えば[レポート2: tic_tac.toe.py](https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/tic_tac_toe.py)の init_board() を参考に取ると、各々次のように記述している。
+    - 例えば[レポート4: tic_tac.toe.py](https://github.com/naltoma/python_intro/blob/master/report/tic_tac_toe.py)の init_board() を参考に取ると、各々次のように記述している。
       - (a) Return the empty board.（空のボードを返す）
       - (b) None (引数はない)
       - (c) list: the empty board with 9 items. （リスト型: 9つの要素を持つ空ボード）
   - 任意の関数2つについて、ユニットテストを記述せよ。この際、関数すべての機能についてテストする必要はなく、一部の動作が確認できれば良い。どの部分をテストするかも自由である。
-- 参考: [レポート2: tic_tac.toe.py](https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/tic_tac_toe.py)
 
 <hr>
 
