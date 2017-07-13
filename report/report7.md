@@ -123,11 +123,16 @@ naruaki toma
 ```
 
 - ヒント（使わなくても書けるけど、使うと便利かもしれない情報）
-  - [chr()](https://docs.python.org/3/library/functions.html#chr)を使うと、Unicodeのコードポイント（整数）を使って文字を表現できます。
-    - 例えば ``chr(97)`` の戻り値は'a'です。
-    - Unicodeについては例えば[Unicodeとは？ その歴史と進化、開発者向け基礎知識](http://www.buildinsider.net/language/csharpunicode/01)を眺めてみると良いかな。
-  - [ord()](https://docs.python.org/3/library/functions.html#ord) を使うと、文字に対応するコードポイントを確認できます。
-    - 例えば ``ord('a')`` の戻り値は97です。
+  - [chr()](https://docs.python.org/3/library/functions.html#chr)
+    - Unicodeのコードポイント（整数）を使って文字を表現できます。
+      - 例えば ``chr(97)`` の戻り値は'a'です。
+      - Unicodeについては例えば[Unicodeとは？ その歴史と進化、開発者向け基礎知識](http://www.buildinsider.net/language/csharpunicode/01)を眺めてみると良いかな。
+  - [ord()](https://docs.python.org/3/library/functions.html#ord)
+    - 文字に対応するコードポイントを確認できます。
+      - 例えば ``ord('a')`` の戻り値は97です。
+  - [str.join()](https://docs.python.jp/3/library/stdtypes.html#str.join)
+    - シーケンス集合を指定した文字で結合した文字列を生成できます。
+      - 例えば ``''.join(['a', 'b'])`` の戻り値は 'ab' です。
 - その他
   - **使用して良いモジュールは、上記で示したもののみとする。**
   - スクリプトファイル名は「report7.py」とすること。
