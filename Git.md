@@ -134,6 +134,7 @@ git init --bare test
 mkdir ~/temp
 cd ~/temp
 git clone ~/GIT/test
+cd test
 ```
 
 <hr>
