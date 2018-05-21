@@ -40,7 +40,7 @@
 <hr>
 
 ## <a name="install">インストール</a>
-- ターミナル上で以下を実行。pip3は、Python3用のパッケージ管理ツール。
+- ターミナル上で以下を実行。pipは、Python用のパッケージ管理ツール。
 ```
 pip install thonny
 ```
