@@ -36,6 +36,8 @@
 - [手順3] 用意したコメント欄にdoctestを記述する。
   - 注意点
     - インデントを揃えよう。
+      - my_math.factR関数内のインデントは「半角スペース4つ」になっている。docstring形式のコメント欄も、その中のdoctestも同じインデントで揃える必要がある。
+      - Pythonインタプリタ上では「>>> 」のように半角スペース付きプロンプト。ここでもそうなるように記述しよう。その他、スペースの有無がテスト結果に影響していくるので注意。
     - Pythonインタプリタ上で実行している状況をイメージし、実行する内容と得られる結果を列挙する必要がある。
 
 ```
@@ -64,10 +66,10 @@ def factR(n):
 ```
 # 以下はターミナル上で実行。
 # case 1: テストに失敗したときだけテスト結果を出力。
-python3 -m doctest my_math.py
+python -m doctest my_math.py
 
 # case 2: 常にテスト結果を出力。
-python3 -m doctest my_math.py -v
+python -m doctest my_math.py -v
 ```
 
 <hr>
