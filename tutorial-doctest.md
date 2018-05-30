@@ -16,14 +16,14 @@
   - 「Doownload ZIP」をクリック。
 - 解凍して作業ディレクトリに移動。
   - ダウンロードしたファイル python_demo_module-master.zip を、ダブルクリックして展開（解凍）する。
-  - ダウンロードしたディレクトリ上で展開したはずなので、上記コードは「~/Downloads/python_demo_module-master/」フォルダにあるはずだ。
-  - 「~/Downloads/python_demo_module-master/」を、「~/prog1/python_demo_module-master/」に移動しよう。
+  - ダウンロードしたディレクトリ上で展開したはずなので、上記コードは ``~/Downloads/python_demo_module-master/`` フォルダにあるはずだ。
+  - ``~/Downloads/python_demo_module-master/`` を、``~/prog1/python_demo_module-master/`` に移動しよう。
 
 <hr>
 
 ## <a name="dir">作業ディレクトリに移動</a>
-- ターミナルを起動して、~/prog1/python_demo_module-master に移動。
-  - 移動先ディレクトリを指定する際、「cd ~/prog1/py」まで入力した状態でTabキーを押すと、 *~/prog1/python_demo_module/* まで補完されるはず。Tabキー補完を使いこなそう。
+- ターミナルを起動して、``~/prog1/python_demo_module-master`` に移動。
+  - 移動先ディレクトリを指定する際、``cd ~/prog1/py`` まで入力した状態でTabキーを押すと、 ``*~/prog1/python_demo_module/*`` まで補完されるはず。**Tabキーによる補完** を使いこなそう。
   - pyから始まるフォルダが複数ある場合、候補を出力してくれるはずなので、候補を見てユニークになるまで文字を入力してからTabキーを押そう。
 
 <hr>
