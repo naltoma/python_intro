@@ -45,6 +45,11 @@
 pip install thonny
 ```
 
+- 初期設定
+  - Thonnyが立ち上がってる状態で、画面左上の「Pythonメニュー」から「Preferences...」を選択。
+  - Thonny optionsウインドウが開くので、そこでEditorパネル内の「Highlight ~」から始まる全ての設定にチェックを入れて、ONにしよう。
+    - Highlightは、エディタ内で強調表示するための設定。
+
 <hr>
 
 ## <a name="run">起動〜新規作成〜実行</a>
