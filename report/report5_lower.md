@@ -86,6 +86,12 @@ target.txtには3つの段落が含まれています。
 >>> len(fuga)
 4
 ```
+  - 大文字・小文字を同一単語として扱うには、「予め、全ての単語を大文字に変換するか、もしくは小文字に変換する」することで、後の処理を記述しやすくなる。小文字に変換するには [str.lower](https://docs.python.jp/3/library/stdtypes.html#str.lower) を使おう。以下、実行例。
+```
+>>> hoge = 'The the'
+>>> print(hoge.lower())
+the the
+```
 
 <hr>
 
