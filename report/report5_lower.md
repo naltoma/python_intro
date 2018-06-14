@@ -73,7 +73,6 @@ target.txtには3つの段落が含まれています。
     - docstring形式でドキュメントを書くこと。（参考: [tic_tac_toe.py](https://github.com/naltoma/python_intro/blob/master/report/tic_tac_toe.py)）
 - ヒント
   - スペースを区切り文字として単語集合に切り出すには、[str.split](https://docs.python.jp/3/library/stdtypes.html#str.split)を使おう。以下、実行例。
-
 ```
 >>> hoge = 'Python is a widely'
 >>> hoge
