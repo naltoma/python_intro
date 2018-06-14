@@ -14,7 +14,7 @@
   - target.txtは以下のようにしてダウンロードすること。
 
 ```
-curl https://raw.githubusercontent.com/naltoma/python_intro/master/report/target.txt -o target.txt
+curl https://raw.githubusercontent.com/naltoma/python_intro/master/report/target.txt -O
 ```
 
 - 達成目標
