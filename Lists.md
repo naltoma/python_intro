@@ -1,12 +1,12 @@
 # リスト型オブジェクトの基本
 
-- 教科書 Chapter 5.2, Lists and Mutability
+- 教科書 Chapter 5.3, Lists and Mutability
 - ＜目次＞
   - <a href="#mutable">Immutable vs. Mutable (不変 vs 可変)</a>
   - <a href="#definition">リストの定義とリスト型オブジェクトの作成方法</a>
   - <a href="#list_methods">リスト操作（図5.4）</a>
-  - <a href="#note_clone">リスト操作時の注意点（chap 5.2.1 cloning)</a>
-  -  <a href="#list_includings">リスト参照を含むリスト（図5.1〜5.3）</a>
+  - <a href="#note_clone">リスト操作時の注意点（chap 5.3.1 cloning)</a>
+  - <a href="#list_includings">リスト参照を含むリスト（図5.1〜5.3）</a>
   - <a href="#list_comprehension">リスト内包表記</a>
   - <a href="#ref">参考サイト</a>
 
@@ -169,7 +169,7 @@ False
 
 <hr>
 
-## <a name="note_clone">リスト操作時の注意点（chap 5.2.1 cloning)</a>
+## <a name="note_clone">リスト操作時の注意点（chap 5.3.1 cloning)</a>
 - 注意点: for文で反復処理をするオブジェクトとしてリストを指定している最中に、そのリスト自身に変更を加えると動作がおかしくなる。
   - 何故か？
     - for文はリストの全要素に対して反復処理する際に、インデックスを内部で参照しているため。
@@ -226,6 +226,7 @@ print(l1)
 # 別のリスト univs1, univs2 を用意。
 # このうち univs1 は、先ほど用意したリストオブジェクト techs と ivys を要素とする。
 # これに対し univs2 は、既存変数とは無関係に新しくstr型オブジェクトを列挙したリストを要素とする。
+
 >>> univs1 = [techs, ivys]
 >>> univs2 = [['MIT', 'Caltech'], ['Harvard', 'Yale', 'Brown']]
 >>> univs1 == univs2
@@ -233,10 +234,21 @@ True
 # 上記補足:
 # 　リスト同士の``==``は、「順番通りに保持している値が等しいか」だけを判定。
 # 　メモリ空間上は異なる部分を参照していても、保持している値が等しければ True になる。
+
+>>> id(univs1) == id(univs2)
+Flase
+# 上記補足:
+# 　関数idは、指定されたオブジェクトのユニークなID（≒住所）を返す。
+# 　同一オブジェクトを指すなら、IDが等しくなる。
+# 　異なるオブジェクトを指すなら、IDが異なる。
+# 　=> 値として等しいか、オブジェクトとして等しいかとで使い分ける必要がある。
+
 >>> print(univs1)
 [['MIT', 'Caltech'], ['Harvard', 'Yale', 'Brown']]
 >>> print(univs2)
 [['MIT', 'Caltech'], ['Harvard', 'Yale', 'Brown']]
+
+# 上記の状態から、
 # techs を編集（下記では techs[0] を違う値に変更）すると、
 # techsリストを参照している univs1 にも影響が及ぶ。
 >>> techs[0] = 'hoge'
@@ -246,6 +258,8 @@ True
 [['hoge', 'Caltech'], ['Harvard', 'Yale', 'Brown']]
 >>> print(univs2)
 [['MIT', 'Caltech'], ['Harvard', 'Yale', 'Brown']]
+
+# 上記の状態から、
 # techs を編集（ここではtechsの後ろに新しいオブジェクトを追加）すると、
 # techsリストを参照している univs1 にも影響が及ぶ。
 >>> techs.append('RPI')
