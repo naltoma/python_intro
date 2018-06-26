@@ -10,8 +10,9 @@
 <hr>
 
 ## <a name="install">Numpyのインストール</a>
+- ターミナルで以下を実行。（Anacondaインストール時には不要）
 ```
-pip3 install numpy
+pip install numpy
 ```
 
 <hr>
@@ -100,5 +101,5 @@ print('固有ベクトル:\n{0}'.format(eigenvectors))
 <hr>
 
 ## <a name="ref">参考サイト</a>
-- [Numpy公式チュートリアル](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+- [Numpy公式チュートリアル](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 - [私訳「暫定的 NumPy チュートリアル」](http://naoyat.hatenablog.jp/entry/2011/12/29/021414) by naoya_t@hatenablog

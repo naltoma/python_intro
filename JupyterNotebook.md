@@ -16,16 +16,16 @@
   - コード、実行結果、コメント等を一つのノートにまとめることができる。
 
 ## <a name="install">インストール</a>
-- ターミナルで以下を実行。
+- ターミナルで以下を実行。（Anacondaインストール時には不要）
 ```
-pip3 install jupyter
-pip3 install matplotlib
+pip install jupyter
+pip install matplotlib
 ```
 
 ## <a name="sample">サンプルを試してみる</a>
 - サンプルファイルをダウンロード。
 ```
-curl https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/jupyter_example.ipynb -o jupyter_example.ipynb
+curl https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/jupyter_example.ipynb -O
 ```
 - Jupyter Notebookの起動。
   - ターミナルで``jupyter notebook``を実行。
