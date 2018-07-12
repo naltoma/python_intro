@@ -98,22 +98,22 @@ curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/rep
 {'the': ['file1.txt', 'file2.txt', 'file3.txt'], 'cat': ['file1.txt', 'file3.txt'], 'sat': ['file1.txt', 'file3.txt'], 'on': ['file1.txt', 'file2.txt'], 'mat': ['file1.txt', 'file2.txt'], 'dog': ['file2.txt', 'file3.txt'], 'stood': ['file2.txt', 'file3.txt'], 'while': ['file3.txt'], 'a': ['file3.txt']}
 
 # マッチング部その1: 「cat」検索結果
->>> print(report7.search_words(key_words, ['cat']))
+>>> print(report7.search_words(index, ['cat']))
 ['file1.txt', 'file3.txt']
 
 # マッチング部その2: 「cat dog」検索結果
->>> print(report7.search_words(key_words, ['cat', 'dog']))
+>>> print(report7.search_words(index, ['cat', 'dog']))
 ['file3.txt']
 
 # マッチング部その3: 「cat mat on」検索結果
->>> print(report7.search_words(key_words, ['cat', 'mat', 'on']))
+>>> print(report7.search_words(index, ['cat', 'mat', 'on']))
 ['file1.txt']
 
 # マッチング部その4: 「hoge」検索結果（該当なしの例）
 # 'None'という文字列を返すのではなく、NoneType型のNoneを返す点に注意。
->>> print(report7.search_words(key_words, ['hoge']))
+>>> print(report7.search_words(index, ['hoge']))
 None
->>> print(type(report7.search_words(key_words, ['hoge'])))
+>>> print(type(report7.search_words(index, ['hoge'])))
 <class 'NoneType'>
 ```
 
