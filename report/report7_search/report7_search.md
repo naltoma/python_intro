@@ -38,6 +38,7 @@
     - 1,2行程度で課題の内容を説明しよう。
   - **書いたコード**
   - **実行結果**
+    - 実行イメージで示している「マッチング部その1」〜「その4」までの4パターンについて、実行結果を含めること。
   - **考察**
     - 課題への取り組みを通し、課題の意義、課題から分かったこと、今後の展望などを述べる。失敗やつまづきがあれば、それらについての失敗分析を含めること。
   - 参考リンク: [実験レポートの書き方](http://www.report.gusoku.net/jikken/jikkenreport.html)
@@ -81,9 +82,9 @@
 ```python
 #### 事前準備。ターミナル上で実行。####
 # ファイルの用意
-curl -O https://github.com/naltoma/python_intro/blob/master/report/report7_search/file1.txt
-curl -O https://github.com/naltoma/python_intro/blob/master/report/report7_search/file2.txt
-curl -O https://github.com/naltoma/python_intro/blob/master/report/report7_search/file3.txt
+curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/report7_search/file1.txt
+curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/report7_search/file2.txt
+curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/report7_search/file3.txt
 
 #### 以降はPythonコード例 ####
 >>> import report7
