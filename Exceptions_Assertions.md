@@ -1,5 +1,5 @@
 # Chapter 7 Exceptions and Assertions
-- 教科書: [Introduction to Computation and Programming Using Python, Revised And Expanded Edition](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-0), 7章の補足。
+- 教科書: [Introduction to Computation and Programming Using Python: With Application to Understanding Data ](https://www.amazon.co.jp/Introduction-Computation-Programming-Using-Python/dp/0262529629), 7章の補足。
   - 7章の内容（例外、try文、アサーション、ポリモーフィズム）は、後期にもやります。今回はイントロダクションとしての解説。
 - 概要
   - exceptionsやassertionsを効果的に使うことで、開発者・利用者に対する情報提供や、defensive programmingを実現できる。
@@ -182,7 +182,7 @@ print(data)
 # 例4-1（教科書の図7.1）: raiseによるエラー文生成。
 def get_ratios(vect1, vect2):
     """Assumes: vect1 and vect2 are lists of equal length of numbers
-    Returns: a list containing the meaningfulvalues of vect1[i]/vect2[i]
+    Returns: a list containing the meaningful values of vect1[i]/vect2[i]
     """
     ratios = []
     for index in range(len(vect1)):
