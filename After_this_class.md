@@ -1,6 +1,6 @@
 # 授業後の道標？
 ## Python関連
-- [python_chart](https://ie.u-ryukyu.ac.jp/tnal/archives/8791): 目的に応じて選ぼう。PDFファイルをダウンロードして、プレビュー等で開くとリンクが埋め込まれた状態で閲覧できます。
+- [python_chart](https://github.com/naltoma/python_chart): 目的に応じて選ぼう。PDFファイルをダウンロードして、プレビュー等で開くとリンクが埋め込まれた状態で閲覧できます。
   - 例えば、、
     - 「ゲーム等のGUI関連を含むアプリ」を作ってみたいなら
       - [Pythonでゲーム作りますが何か？](http://aidiary.hatenablog.com/entry/20080507/1269694935): ＊オリジナルはPython2。リポジトリ上にPython3版へのリンクがあります。古いけど、「過程」を文章化しているという点でオススメ。
