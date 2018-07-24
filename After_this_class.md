@@ -11,6 +11,8 @@
       - [scikit-learn: Machine Learning in Python](http://scikit-learn.org/stable/)
 
 ## それ以外
+- 別のプログラミング言語を学んでみたいなら
+  - [Progate](https://prog-8.com/): WebアプリやiOSアプリ等、目的別・言語別に入門レベルから学べます。
 - 「コンテスト」に興味あるなら
   - [強くなるためのプログラミング -様々なプログラミングコンテストとそのはじめ方-](http://cocodrips.hateblo.jp/entry/2015/10/11/114212)
 - 「言語そのもの」を作ってみる？
@@ -25,3 +27,11 @@
   - [Linux標準教科書](http://www.lpi.or.jp/linuxtext/text.shtml)
 - 「学び方」自体を学ぶなら
   - [大学生のためのリサーチリテラシー入門 : 研究のための8つの力](https://www.amazon.co.jp/大学生のためのリサーチリテラシー入門-研究のための８つの力-山田-剛史/dp/4623060454)　＊ここでいう「研究」は、工学基礎演習あたりでも実施している広い意味での研究。あるテーマについてどのように情報収集し、整理し、体系化するか。文系理系問わず「大学生のための」必読書。
+- 様々な分野の最前線を覗いてみたいなら
+  - [IPSJ-ONE](http://ipsj-one.org): 一般の方向けにも「最先端の研究を楽しく伝える」ことを主題とした企画。
+    - [2015年度](http://ipsj-one.org/2015/)
+    - [2016年度](http://ipsj-one.org/2016/)
+      - 情報工卒業生・玉城絵美さん [身体の共有](http://ipsj-one.org/2016/videos/5_tamaki_fs.mp4)
+    - [2017年度](http://ipsj-one.org/2017/)　＊動画なし？
+  - [情報処理学会・ジュニア会員](https://www.ipsj.or.jp/nyukai_kojin.html)
+    - 学部3年生までは無料。
