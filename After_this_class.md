@@ -8,6 +8,7 @@
     - 「データサイエンス」に興味あるなら
       - [Pythonによるデータ分析入門――NumPy、pandasを使ったデータ処理](https://www.oreilly.co.jp/books/9784873116556/)
     - 「機械学習」に興味あるなら
+      - [Pythonで動かして学ぶ！ あたらしい機械学習の教科書](https://www.shoeisha.co.jp/book/detail/9784798144986)
       - [scikit-learn: Machine Learning in Python](http://scikit-learn.org/stable/)
 
 ## それ以外
