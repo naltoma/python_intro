@@ -55,7 +55,7 @@
 <hr>
 
 ## <a name="level3">教科書課題: レベル3「教科書1章、最後のFinger exerciseに取り組もう」</a>
-- 概要: Try writing an algorithm for driving between two destinations. Write it the way you would for a person, and then imagine what would happen if that person were as stupid as a computer, and executed the algorithm exactly as written.
+- 概要: （中略）Try writing an algorithm for driving between two destinations. Write it the way you would for a person, and then imagine what would happen if that person were as stupid as a computer, and executed the algorithm exactly as written.
 - 補足
   - レポートには、(1) 検討したアルゴリズムを手順としてまとめ、(2) それをコンピュータに任せた場合にどうなるか、の2点を掲載すること。
   - 明確な正解があるわけではないです。与えられた問題を自分なりに理解（解釈）し、手順として整理する練習です。
