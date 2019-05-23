@@ -42,7 +42,8 @@
 ## <a name="install">インストール</a>
 - ターミナル上で以下を実行。pipは、Python用のパッケージ管理ツール。
 ```
-pip install thonny
+conda install docutils future pylint iso8601 pyyaml pyserial
+pip install --no-deps thonny
 ```
 
 - 初期設定
@@ -132,7 +133,7 @@ print(result)
 def f(x):
     y = 1
     x = x + y
-    print('x = {0}'.format(x))
+    print('f(x): x = {0}'.format(x))
     return x
 
 x = 3
