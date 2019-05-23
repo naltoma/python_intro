@@ -133,13 +133,13 @@ print(result)
 def f(x):
     y = 1
     x = x + y
-    print('f(x): x = {0}'.format(x))
+    print('f(x): x = {}'.format(x))
     return x
 
 x = 3
 y = 2
 z = f(x)
-print('z = {0}'.format(z))
-print('x = {0}'.format(x))
-print('y = {0}'.format(y))
+print('z = {}'.format(z))
+print('x = {}'.format(x))
+print('y = {}'.format(y))
 ```
