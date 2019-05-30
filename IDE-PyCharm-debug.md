@@ -27,15 +27,13 @@
     - PyCharm CEが起動したら、左上のPyCharmメニューから「Preferences...」を選択。
     - 左パネルから「Project Interpreter」を選択。
     - 右パネルから「Project Interpreter <No interpreter>」を選択。
-    - 一番下の選択肢「Show All...」を選択すると、新しいウィンドウが開く。
-      - 一番下の「+」ボタンをクリック。
-        - 新しく出てきたウィンドウの、左パネルから「Conda Environment」を選択すると、右パネル内に以下のように設定されるはず。
-          - Location: /opt/homebrew/var/pyenv/versions/anaconda3-5.1.0/envs/untitled
-          - Python version: 3.6
-          - Conda executable: /opt/homebrew/var/pyenv/versions/anaconda3-5.1.0/bin/conda
-        - 右下の「OK」をクリック。暫く環境設定が始まる。
-      - 環境設定が終わると「Project Interpreter」ウィンドウに戻る。ここで「Python 3.6」が選択されていることを確認。大丈夫なら、右下の「OK」を選択。
-    - この時点でPreferencesウィンドウに戻ってるはず。Project InterpreterとしてPython 3.6が選ばれていることを確認して、右下の「Apply」を選択。その後「OK」を選択。暫く環境設定が始まる。
+      - ここで「/anaconda3/bin/python」が見つかるなら、それを選択。
+      - もし上記が見つからないなら、一番下の「+」ボタンをクリック。
+        - 新しく出てきたウィンドウの、左パネルから「System Interpreter」を選択し、右端の「...」を選択。
+        - ここで「/anaconda3/bin/python」を選択。
+    - インタプリタとして「/anaconda3/bin/python」を選択したら、右下の「Apply」をクリックし、「OK」を選択。暫く環境設定が始まる。
+    - 環境設定が終わると「Project Interpreter」ウィンドウに戻る。ここで「Python 3.7」が選択されていることを確認。大丈夫なら、右下の「OK」を選択。
+    - この時点でPreferencesウィンドウに戻ってるはず。Project InterpreterとしてPython 3.7が選ばれていることを確認して、右下の「Apply」を選択。その後「OK」を選択。暫く環境設定が始まる。
   - PyCharmで利用するディレクトリを用意
     - ターミナルを起動し、mkdir PycharmProjectsを実行。
 
