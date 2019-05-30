@@ -85,5 +85,6 @@ print('ファイル読み込み終了')
 
 ## <a name="ref">出典</a>
 - 教科書4.6節。図4.12。
+- [Dive Into Python 3, 第11章 ファイル](http://diveintopython3-ja.rdy.jp/files.html)
 - [Python3: open()](https://docs.python.org/3/library/functions.html#open)
 - [io --- ストリームを扱うコアツール](https://docs.python.org/ja/3/library/io.html)
