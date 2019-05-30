@@ -57,7 +57,7 @@ curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/tar
 
 ```
 oct:tnal% python report4.py target2.txt
-target.txtには9行の文字列が含まれています。
+target.txtには段落が9つ含まれています。
 単語総数は322個ありました。そのうちユニークな単語数は184個です。
 ```
 
