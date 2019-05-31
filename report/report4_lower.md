@@ -10,8 +10,8 @@
 <hr>
 
 ## <a name="abst">課題概要</a>
-- テキストファイル[target.txt](./target.txt)を読み込み、段落数・単語総数・ユニークな単語数を各々カウントせよ。
-  - target.txtは以下のようにしてダウンロードすること。
+- テキストファイル[target2.txt](./target2.txt)を読み込み、段落数・単語総数・ユニークな単語数を各々カウントせよ。
+  - target2.txtは以下のようにしてダウンロードすること。
 
 ```
 curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/target2.txt
@@ -57,7 +57,7 @@ curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/tar
 
 ```
 oct:tnal% python report4.py target2.txt
-target.txtには段落が9つ含まれています。
+target2.txtには段落が9つ含まれています。
 単語総数は322個ありました。そのうちユニークな単語数は184個です。
 ```
 
