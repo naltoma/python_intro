@@ -92,6 +92,18 @@ target2.txtには段落が9つ含まれています。
 >>> print(hoge.lower())
 the the
 ```
+  - 行末の改行文字を削除したいのであれば、[str.rstrip()](https://docs.python.org/3/library/stdtypes.html?highlight=str.rstrip#str.rstrip) を使おう。以下、実行例。
+
+```
+>>> hoge = 'hello\n'  # '\n'は改行文字。
+>>> print(hoge)   # 改行文字が含まれているため、プロンプトの前に改行だけの行が出力されている。
+hello
+
+>>> hoge.rstrip()
+'hello'
+>>> print(hoge.rstrip())  # 改行文字が削除されている。
+hello
+```
   - プログラム実行時に、コマンドラインからファイル名を指定するには sys ライブラリの [sys.args](https://docs.python.org/3/library/sys.html?highlight=sys.arg#sys.argv) を使おう。以下、コード＆実行例。exit()は、ここでは不要な命令だが、本来のプログラム上は「ファイル名が指定されていない場合には、ここでプログラムの処理を終える」ために使いことを想定した例。
 
 ```Python
