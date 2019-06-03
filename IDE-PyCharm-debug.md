@@ -23,6 +23,22 @@
 3. アプリの起動
   - 「アプリケーション」フォルダにある「PyCharm CE」を実行。
 4. 初期設定
+  - PyCharm設定の引継ぎ確認
+    - 今回が新規利用ならば、「Do not import settings（設定を引き継がない）」を選択して、OK。
+    - もし過去に利用していて、設定が残っているならばその設定を保存したフォルダを指定しよう。
+  - JetBrains Privacy Policy の確認
+    - confirm -> OK
+  - Data Sharingの確認
+    - プラグインの資料履歴やソフトウェア設定、プロジェクト内のファイル数等の統計情報について、共有して構わないならば「Send Usage Statistics」を選択。共有したくないならば「Don't send」を選択。　＊どちらでもOK。
+  - Select keymap scheme
+    - 好きな方を好みで選択。（デフォルトのままでOK）
+  - Set UI theme
+    - 好きな方を好みで選択。（デフォルトのままでOK）
+  - Create Launcher Script
+    - 「Create a script for opening files and projects from the command line」にチェックを入れて、Next。
+  - Customize PyCharm
+    - 「Markown」のみInstall。他も興味あるならお好みでどうぞ。
+    - 「Start using PyCharm」をクリック。
   - Pythonインタプリタの設定
     - PyCharm CEが起動したら、左上のPyCharmメニューから「Preferences...」を選択。
     - 左パネルから「Project Interpreter」を選択。
@@ -35,7 +51,7 @@
     - 環境設定が終わると「Project Interpreter」ウィンドウに戻る。ここで「Python 3.7」が選択されていることを確認。大丈夫なら、右下の「OK」を選択。
     - この時点でPreferencesウィンドウに戻ってるはず。Project InterpreterとしてPython 3.7が選ばれていることを確認して、右下の「Apply」を選択。その後「OK」を選択。暫く環境設定が始まる。
   - PyCharmで利用するディレクトリを用意
-    - ターミナルを起動し、mkdir PycharmProjectsを実行。
+    - （ターミナルを起動し、mkdir PycharmProjectsを実行。）　＊自動で用意されるはず。
 5. 単に新規プロジェクト作成してみる。
   - PyCharmを起動。
   - メニューから「Create New Project」を選択。
