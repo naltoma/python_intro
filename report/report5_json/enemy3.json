@@ -1,0 +1,18 @@
+{
+  "slime": {
+    "HP": 5,
+    "mode": "ATK",
+    "ATK": 2
+  },
+  "goblin": {
+    "HP": 10,
+    "mode": "ATK",
+    "ATK": 4
+  },
+  "magician": {
+    "HP": 10,
+    "mode": ["ATK", "FIRE"],
+    "ATK": 4,
+    "FIRE": [6, 10]
+  }
+}
