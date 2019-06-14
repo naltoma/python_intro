@@ -152,8 +152,8 @@ for value in result.groups():
 - おまけ課題
   - 余裕がある人は下記ファイルにも対応できるように拡張してみよう。なお、前述の課題までのものを「report5.py」として残し、提出すること。また、おまけ課題や、独自設定課題などに取り組んだ際には、途中まででも構わないのでレポートに書くことを推奨します。（書いてあれば加点できるので）
 - JSONファイル拡張例
-  - (enemy2.json)[./enemy2.json]
-  - (enemy3.json)[./enemy3.json]
+  - [enemy2.json](./enemy2.json)
+  - [enemy3.json](./enemy3.json)
 
 <hr>
 
