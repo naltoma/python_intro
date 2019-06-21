@@ -36,6 +36,8 @@ Example:
         % python
         > from tic_tac_toe import *
         > test_play()
+    case 3:
+        % python tic_tac_toe.py
 """
 
 import random
@@ -154,3 +156,6 @@ def test_play():
     index = point_random(board, 'x')
     print("# user 'x' pointed to board[{0}]".format(index))
     print_board(board)
+
+if __name__ == '__main__':
+    test_play()

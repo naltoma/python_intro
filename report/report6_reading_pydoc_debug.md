@@ -1,4 +1,4 @@
-# 課題レポート4: コード読解
+# 課題レポート6: コード読解
 
 - ＜目次＞
   - <a href="#abst">課題概要</a>
@@ -15,7 +15,7 @@
     - 下記コマンド（長いですが1行です）をターミナルで実行することでダウンロード可能。
 
 ```
-curl https://raw.githubusercontent.com/naltoma/python_intro/master/report/tic_tac_toe.py -o tic_tac_toe.py
+curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/tic_tac_toe.py
 ```
 
 - 達成目標
@@ -82,6 +82,28 @@ curl https://raw.githubusercontent.com/naltoma/python_intro/master/report/tic_ta
   - 現時点でのコードにはゲーム終了判定をする部分がない。完全でなくてもかまわないので、終了判定する関数を書いてみよう。
     - 例えば、「1行だけを判定する関数」、「1列だけを判定する関数」のように、部分的な判定をしてみると良いでしょう。
     - docstringによる解説や、doctestによるユニットテストも書いてみよう。
+
+<hr>
+
+## <a name="hints">ヒント</a>
+- doctestの実行方法
+  - ファイル実行するなら、[Python標準ライブラリ](https://docs.python.org/ja/3/library/)からdoctestの使い方を探すか、授業資料を参照しよう。
+  - PyCharmで実行する場合、デフォルトでdoctest実行してくれる。
+    - 逆に、通常実行するためには、以下のように追加設定する必要がある。
+      - step 0: 事前に新規プロジェクトを用意し、tic_tac_toe.pyをその中にコピーする。
+      - step 1: Runメニューから「Edit Configurations...」を選択。
+      - step 2: 左上の「＋」を押して設定ファイルを追加。
+        - 追加時に「Python」を選ぶと、通常のPython実行の設定ファイルを作成できる。
+        - 「Name欄」に、自分が分かりやすい名前をつけよう。普通はスクリプトファイル名そのものが分かりやすいはず。
+        - 「Scriptpath欄」に、右端のフォルダアイコンをクリックして、tic_tac_toe.pyを選択する。
+        - 「Python Interpreter」が /anaconda3/bin/python になっていることを確認。
+        - 右下の Apply を押して、OK。
+      - step 3: 設定ファイルを指定。
+        - 今の状態で Run をしても、当初の doctest 実行のままになっている。これを切り替えるためには、どの設定ファイルで実行するかを指定する必要がある。
+        - 設定ファイルの指定は、「右上 Run アイコンの左欄」から行う。今は「Doctest in tic_tac_toe」になっているはず。これをstep 2で作成した設定ファイル名に変更しよう。
+      - step 4: 実行。
+        - 設定ファイルを指定後、Run実行するだけで後は通常実行になる。
+        - doctest実行に切り替えたいなら、同様に右上から設定ファイルを変更して実行すると良い。
 
 <hr>
 
