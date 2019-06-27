@@ -40,7 +40,9 @@ def init_maze(height, width):
 
 def print_maze(maze):
     '''print the maze with 2-dimensional map
-    Note: position "(x, y) = (0, 0)" is set to the upper left on the maze (== maze[0][0]).
+    Note:
+      position "(x, y) = (0, 0)" is set to the upper left on the maze (== maze[0][0]).
+      same as position (1, 2) => maze[1][2].
 
     Args:
     :param maze (int[][]): created by init_maze()
@@ -129,8 +131,8 @@ def is_space(maze, current_x, current_y, diff_x, diff_y):
     :return: boolean: return True if there are valid spaces, otherwise return False.
 
     >>> maze = init_maze(3, 3)
-    >>> is_space(maze, 0, 1, 0, -1)
-    False
+    >>> is_space(maze, 2, 1, 0, -2)
+    True
     '''
     next_x = current_x + diff_x
     next_y = current_y + diff_y
