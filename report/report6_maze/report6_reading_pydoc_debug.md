@@ -16,7 +16,7 @@
     - 下記コマンド（長いですが1行です）をターミナルで実行することでダウンロード可能。
 
 ```
-curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/report6/generate_maze.py
+curl -O https://raw.githubusercontent.com/naltoma/python_intro/master/report/report6_maze/generate_maze.py
 ```
 
 - 達成目標
