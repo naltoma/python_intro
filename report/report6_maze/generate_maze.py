@@ -1,4 +1,4 @@
-'''Maze generator with simplified depth-first search algorithm
+'''A simple maze generator with some **BUGS**
 
 There are many kinds of algorithms for maze[1].
 This module supports a maze generator with a simplified depth-first search algorithm[2] below.
@@ -19,8 +19,11 @@ def init_maze(height, width):
     '''ready for non-spaced (all blocked) maze
     All values are set to 0, it means "block".
 
+    Args:
     :param height (int): the height of maze
     :param width (int): the width of maze
+
+    Returns:
     :return: maze (int[][]): double list using as a 2-dimensional maze
 
     >>> maze = init_maze(3, 2)
@@ -39,7 +42,10 @@ def print_maze(maze):
     '''print the maze with 2-dimensional map
     Note: position "(x, y) = (0, 0)" is set to the upper left on the maze (== maze[0][0]).
 
+    Args:
     :param maze (int[][]): created by init_maze()
+
+    Returns:
     :return: None
 
     >>> maze = init_maze(3, 4)
@@ -60,11 +66,14 @@ def dig_maze(maze, current_x, current_y, diff_x, diff_y):
     '''dig spaces from the current location to target location
     After digging, the spaces are set to 1 when the space are block.
 
+    Args:
     :param maze (int[][]): created by init_maze()
     :param current_x (int): current location in the maze
     :param current_y (int): current location in the maze
     :param diff_x (int): difference between current_x and target_x. (target_x = current_x + diff_x)
     :param diff_y (int): difference between current_y and target_y. (target_y = current_y + diff_y)
+
+    Returns:
     :return: next_x (int): location after digging
     :return: next_y (int): location after digging
 
@@ -101,7 +110,7 @@ def dig_maze(maze, current_x, current_y, diff_x, diff_y):
             for i in range(abs(diff_y)):
                 if maze[current_y - i - 1][current_x] == 0:
                     maze[current_y - i - 1][current_x] = 1
-    next_x = current_y + diff_x
+    next_x = current_x + diff_x
     next_y = current_y + diff_y
     return next_x, next_y
 
@@ -109,16 +118,23 @@ def is_space(maze, current_x, current_y, diff_x, diff_y):
     '''check the valid space
     if the target space are located inside of the maze, it is valid.
 
+    Args:
     :param maze (int[][]): created by init_maze()
     :param current_x (int): current location in the maze
     :param current_y (int): current location in the maze
     :param diff_x (int): difference between current_x and target_x. (target_x = current_x + diff_x)
     :param diff_y (int): difference between current_y and target_y. (target_y = current_y + diff_y)
+
+    Returns:
     :return: boolean: return True if there are valid spaces, otherwise return False.
+
+    >>> maze = init_maze(3, 3)
+    >>> is_space(maze, 0, 1, 0, -1)
+    False
     '''
     next_x = current_x + diff_x
     next_y = current_y + diff_y
-    if next_x < 0 or next_x > (len(maze[0])-1) or next_y < 0 or next_y > (len(maze)-1):
+    if next_x < 0 or next_x > (len(maze[0])-1) or next_y <= 0 or next_y > (len(maze)-1):
         return False
     else:
         return True
@@ -126,6 +142,10 @@ def is_space(maze, current_x, current_y, diff_x, diff_y):
 def set_direction():
     '''ready for direction at random
 
+    Args:
+    None
+
+    Returns:
     :return: direction (int): 0 = North, 1 = East, 2 = South, 3 = West
     :return: diff_x (int): difference on x axis between current location and target location
     :return: diff_y (int): difference on y axis between current location and target location
@@ -151,10 +171,13 @@ def set_direction():
 def create_maze(maze, x, y, random_seed=0):
     '''create maze from start_x & start_y by simple depth-first search
 
+    Args:
     :param mmaze (int[][]): created by init_maze()
     :param x (int): start position in the maze
     :param y (int): start position in the maze
     :param random_seed (int): seed for random generator
+
+    Returns:
     :return: None
 
     >>> maze = init_maze(3, 4)
@@ -174,6 +197,7 @@ def create_maze(maze, x, y, random_seed=0):
         flag = is_space(maze, x, y, diff_x, diff_y)
         if flag == True:
             x, y = dig_maze(maze, x, y, diff_x, diff_y)
+            #print('new(x,y) = ', x, y)
             #print_maze(maze)
         else:
             break
