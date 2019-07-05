@@ -97,7 +97,7 @@
 - ターミナル上で ``git --version`` と入力して実行。
   - Command Not Found と言われるならインストールされてない可能性あり。
     - ``brew install git`` でインストール。
-  - git version 2.11.0 (Apple Git-81) とかgitのバージョン情報が出力されるならok。
+  - git version 2.20.1 (Apple Git-117) とかgitのバージョン情報が出力されるならok。
 
 ### <a name="1">1. Git利用前の設定。</a>
 - ``git config --global push.default simple``
@@ -238,6 +238,7 @@ git checkout <revision_checksum>
 <hr>
 
 ## <a name="ref">参考サイト</a>
+- [【永久保存版】Gitのあらゆるトラブルが解決する神ノウハウ集を翻訳した by LABOT 機械学習ブログ](https://blog.labot.jp/entry/2019/07/01/183204)
 - [サルでもわかるGit入門 〜バージョン管理を使いこなそう〜](http://www.backlog.jp/git-guide/)
 - [「すごいGit楽しく学ぼう」を公開しました](http://alpha.mixi.co.jp/entry/20150513) by 情報工卒業生
 - [知らないと現場で困るバージョン管理システムの基礎知識](http://www.atmarkit.co.jp/ait/articles/1305/20/news015.html)
