@@ -70,7 +70,9 @@
   - コミットしなかったものはリポジトリとして管理されない点に注意。（何でも自動でやってくれるわけではない）
 - **コミット・メッセージ (commit message)**
   - コミット時のコメント文のこと。何を修正したのかを端的に伝える文章であることが望ましい。
-
+- 概要図: リポジトリによるバージョン管理のイメージ
+  -  ![概要図: リポジトリによるバージョン管理のイメージ](./figs/git_s.png)
+  - [図拡大版](./figs/git.pdf)
 
 <hr>
 
@@ -100,8 +102,6 @@
   - git version 2.20.1 (Apple Git-117) とかgitのバージョン情報が出力されるならok。
 
 ### <a name="1">1. Git利用前の設定。</a>
-- ``git config --global push.default simple``
-  - ひょっとすると実行しなくても大丈夫かもしれない。
 - ``git config --global user.name "Naruaki TOMA"``
   - 自分の名前に修正して実行すること。
 - ``git config --global user.email "tnal@ie.u-ryukyu.ac.jp"``
