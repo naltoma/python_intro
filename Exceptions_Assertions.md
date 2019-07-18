@@ -9,8 +9,12 @@
       - 良く見る例外: IndentationError, IndexError, TypeError, NameError, ValueError, ZeroDivisionError
         - Tips: エラーは開発者に対する情報提供。エラー出たらどういう意味か読み取ろう。
         - エラーは例外の一種。エラーだけが例外ではない。
+        - [組み込み例外](https://docs.python.org/ja/3/library/exceptions.html) by 公式ドキュメント
   - **assertions**: 表明、断言、アサート、アサーション
     - 関数や手続きが「前提として想定していること」を明示するために用いる。簡易的なテストと捉えても良い。
+  - 関連: **warnings（警告)**
+    - [警告の制御](https://docs.python.org/ja/3/library/warnings.html) by 公式ドキュメント
+      - 「警告メッセージは一般に、ユーザに警告しておいた方がよいような状況下にプログラムが置かれているが、その状況は (通常は) 例外を送出したりそのプログラムを終了させるほどの正当な理由がないといった状況で発されます。例えば、プログラムが古いモジュールを使っている場合には警告を発したくなるかもしれません。」
 
 - ＜目次＞
   - <a href="#example">例外発生の例</a>
@@ -260,3 +264,5 @@ print(get_ratios2([1.0, 2.0], [3.0]))
 - [第一級オブジェクト](https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/Higher_order_programming.html)
 - [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html) by 公式ドキュメント
 - [assert statement](https://docs.python.org/3/reference/simple_stmts.html#assert) by 公式ドキュメント
+- [組み込み例外](https://docs.python.org/ja/3/library/exceptions.html) by 公式ドキュメント
+- [警告の制御](https://docs.python.org/ja/3/library/warnings.html) by 公式ドキュメント
