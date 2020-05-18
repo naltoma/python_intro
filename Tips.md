@@ -63,5 +63,16 @@ capitalize(...) method of builtins.str instance
 ```
 
 - 主な調べ方3-2:
-  - PyCharmの場合
+  - VS Code, PyCharmの場合
     - ファイル編集中に「変数名.」まで記述した時点で、その変数に保存しているオブジェクトが利用できる関数等の一覧が簡易表示される。
+- 主な調べ方4: google
+  - エラー文等の出力を調べる際には、文全体をダブルクォートで囲うとその文を含むページを検索できる。
+```Python
+>>> hoge
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hoge' is not defined
+```
+  - 検索フレーズ1："NameError: name 'hoge' is not defined"
+    - ここで、「hoge」は一般的なメッセージではなく、今回の手元のコードに特化した話。こういう場合は次のように2つに分けて検索するのも良い。
+  - 検索フレーズ2："NameError: name" "is not defined"
