@@ -72,6 +72,14 @@ Iris-virginica, 50 samples: 6.59, 2.97, 5.55, 2.03
   - データファイルの最後には「何もない空の行」が挿入されている点に注意すること。（デバッグすると分かりやすい）
   - CSVファイルの読み込みには、(1)[csvモジュール](https://docs.python.jp/3/library/csv.html)を使うか、もしくは、(2)通常のファイル読み込み後に[str.split](https://docs.python.jp/3/library/stdtypes.html#str.split)で分割しよう。
   - 平均値を下二桁で出力（or算出）する際には、[numpy.around](https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.around.html#numpy.around)を利用しよう。
+    - numpyモジュールを使うためには、一度インストールする必要がある。VS Codeのターミナル上から ```conda install numpy``` と実行しよう。
+    - プログラムとして利用するには、次のようにして書くことになる。
+```
+import numpy as np
+sample = 3.14159
+data = np.around(sample,3) # これは下3桁で丸める例。
+print(data) # => 3.142
+```
     - 小数点を指定する理由について。
       - 平均値や標準偏差を求める際に、単にfloatのまま処理すると膨大な桁数が発生してしまう。それに対して、今回扱うデータは小数点第1位までしかない。丸め誤差もあるため、小数点第3位で近似し、小数点第2位までで保存＆出力するようにしよう。
       - なお、言語によって実装が異なるが、PythonやNumpyのround関数は、厳密には四捨五入とは異なる。このことは上記ドキュメントにも「Evenly round to the given number of decimals.」と書いてある通りである。何故このような仕様になっているのかは、例えば[JIS, ISO 式四捨五入](http://www.okadajp.org/RWiki/?JIS%2CISO式四捨五入)を参照すると理解しやすいかも。
