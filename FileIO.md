@@ -87,17 +87,19 @@ print('ファイル読み込み終了')
       - 引数hintを省略した場合には、ストリームからファイル全体を読んでリストとして返す。各行はstr型オブジェクトとして保存されている。ファイルサイズが巨大な場合にはメモリを超えてしまうため、readlineを使うことを検討しよう。
 
 ```Python
-# readlineを使った例
+# readlineを使った例。
+# iris.data は以下からダウンロード。
+# https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 filename = 'iris.data'
 with open(filename, 'r') as fh:
   line_no = 1
   while True:
     line = fh.readline()
-    if line != None
+    if line == "":
+        break
+    else:
         print('{}行目の中身: {}'.format(line_no, line))
         line_no += 1
-    else:
-        break
 print('ファイル読み込み終了')
 ```
 
