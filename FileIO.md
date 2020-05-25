@@ -42,8 +42,11 @@ print('ファイル書き込み終了')
     - ``fh.write()``は、指定したファイルハンドラ（fh）に対して、書き込むための関数。単に ``fh.write(name)``でも書き込み可能。この場合には「名前」のみ書き込むことになる。ここでは単に改行も加えたい（例えば複数人の名前をループ処理して取得したい場合には改行加えて列挙したい）という意図で、最後に ``\n`` を追加している。
   - 5行目
     - withブロックを抜けているため、ここでは既にfh.close()が自動的に実行された後。fhに対する処理をすることはできない。更にファイル操作したいなら、もう一度openし直す必要がある。
-- ファイル操作時の注意
-  - open()時の代表的なオプションは、read 'r', write 'w', append 'a' あたり。'w'は、「上書きモードで開く」点に注意。もし既にファイルの中身が存在している場合には一旦削除した上で、ファイルを用意する。
+- Tips
+  - ファイル操作時の注意
+    - open()時の代表的なオプションは、read 'r', write 'w', append 'a' あたり。'w'は、「上書きモードで開く」点に注意。もし既にファイルの中身が存在している場合には、中身を削除した上で書き込むことになる。
+  - ファイルへの書き込み方。
+    - 上記コード例の通り、ファイルオブジェクトに対して wirte 関数を実行することで、指定ファイルへ書き込むことができる。これ以外にもファイルオブジェクトを指定して書き込むことは可能。例えば ``print(name, file=fh)`` としてprint関数の引数fileにファイルオブジェクトを指定すると、標準出力ではなくファイルに対して出力する（＝書き込む）ことができる。
 
 <hr>
 
@@ -69,13 +72,34 @@ print('ファイル読み込み終了')
   - 3行目
     - 読み込んだ行数を表示するための変数を用意。
   - 4行目
-    - ファイルハンドラから1行ずつ読み込み、変数lineに保存した上で、forブロックで処理していく。
+    - ファイルハンドラから「1行を1str型オブジェクト」「そのstr型オブジェクトを要素として持つリスト」として読み込む。この要素を変数lineに保存した上で、forブロックで処理していく。
   - 5行目
-    - ちゃんと読み込めてることを確認するために、出力しているだけのコード例。
+    - ちゃんと読み込めてることを確認するために、出力しているだけのコード例。何もない空の行も出力されることに注意。これは「行末ある改行文字」もそのまま読み込んでいるため。改行文字を取り除きたいなら [str.rstrip()](https://docs.python.org/ja/3/library/stdtypes.html?highlight=split#str.rstrip) を使おう。
   - 6行目
     - 行番号を更新。
   - 7行目
     - withブロックを抜けているため、処理がここに辿り着いた時点でfhに対する処理は終了。
+- Tips
+  - ファイル読み込みには [readline関数, readlines関数](https://docs.python.org/3/library/io.html?highlight=readlines#io.IOBase.readline) が用意されている。
+    - ``readline(size=-1)``
+      - 引数sizeを省略した場合には、ストリーム（ここではファイルハンドラ）から1行読んで返す。
+    - ``readlines(hint=-1)``
+      - 引数hintを省略した場合には、ストリームからファイル全体を読んでリストとして返す。各行はstr型オブジェクトとして保存されている。ファイルサイズが巨大な場合にはメモリを超えてしまうため、readlineを使うことを検討しよう。
+
+```Python
+# readlineを使った例
+filename = 'iris.data'
+with open(filename, 'r') as fh:
+  line_no = 1
+  while True:
+    line = fh.readline()
+    if line != None
+        print('{}行目の中身: {}'.format(line_no, line))
+        line_no += 1
+    else:
+        break
+print('ファイル読み込み終了')
+```
 
 <hr>
 
@@ -85,6 +109,7 @@ print('ファイル読み込み終了')
 
 ## <a name="ref">出典</a>
 - 教科書4.6節。図4.12。
+- [7.2. Reading and Writing Files / Python Tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 - [Dive Into Python 3, 第11章 ファイル](http://diveintopython3-ja.rdy.jp/files.html)
 - [Python3: open()](https://docs.python.org/3/library/functions.html#open)
 - [io --- ストリームを扱うコアツール](https://docs.python.org/ja/3/library/io.html)
