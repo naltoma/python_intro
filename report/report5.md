@@ -55,16 +55,16 @@ curl https://raw.githubusercontent.com/naltoma/python_intro/master/report/target
 - 実行イメージ
 
 ```
-oct:tnal% python3 report5.py
+oct:tnal% python report5.py
 target.txtには3つの段落が含まれています。
-単語総数は170個ありました。そのうちユニークな単語数は124個です。
+単語総数は170個ありました。そのうちユニークな単語数は123個です。
 ```
 
 - 条件
   - 数え方について。
     - 段落数を数える際には、空行（改行だけの行）は無視して数えること。今回の例では、2行目と4行目が空行なので、カウントしないように。
     - 単語総数を数える際には、スペースを区切り文字として数えること。例えば1行目の最後「large scale.[24]」は、「large」と「scale.[24]」という2つの単語があるものとして数えよ。
-    - ユニークな単語数を数える際には、大文字小文字は区別すること。例えば「the」と「The」は異なる単語として数えよ。
+    - ユニークな単語数を数える際には、大文字小文字の違いは無視すること。例えば「the」と「The」は同一単語として扱うこと。
   - 実装について。
     - スクリプトファイル名は「report5.py」とすること。
     - 最低1つは関数定義して利用すること。
@@ -72,7 +72,7 @@ target.txtには3つの段落が含まれています。
       - 引数・戻り値の設定に注意。例えば、引数として渡していないにも関わらず、関数内から外部の変数へアクセスするような書き方は減点対象。
     - docstring形式でドキュメントを書くこと。（参考: [tic_tac_toe.py](https://github.com/naltoma/python_intro/blob/master/report/tic_tac_toe.py)）
 - ヒント
-  - スペースを区切り文字として単語集合に切り出すには、[str.split](https://docs.python.jp/3/library/stdtypes.html#str.split)を使おう。以下、実行例。
+  - スペースを区切り文字として単語集合に切り出すには、[str.split](https://docs.python.jp/3/library/stdtypes.html#str.split)を使おう。大文字小文字を同一視するには、大文字もしくは小文字に変換して統一すると良い。以下、実行例。
 
 ```
 >>> hoge = 'Python is a widely'
@@ -85,6 +85,8 @@ target.txtには3つの段落が含まれています。
 ['Python', 'is', 'a', 'widely']
 >>> len(fuga)
 4
+>>> hoge.lower()
+'python is a widely'
 ```
 
 <hr>
