@@ -94,7 +94,7 @@ print(deck)
 
 # 方法1−2: importで指定モジュールを読み込み、別称を付ける。
 import cards as trump
-deck = deck.initialize_deck()
+deck = trump.initialize_deck()
 print(deck)
 ```
 
