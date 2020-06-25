@@ -1,11 +1,11 @@
 # Jupyter Lab を使ってみよう
 
 - ＜目次＞
-  - <a href="#whatis">Jupyter Notebook とは？</a>
+  - <a href="#whatis">JupyterLab とは？</a>
   - <a href="#install">インストール</a>
   - <a href="#sample">サンプルを試してみる</a>
   - <a href="#newfile">ゼロから新規作成してみる</a>
-  - <a href="#shutdown">Jupyter Notebook を終了する</a>
+  - <a href="#shutdown">JupyterLab を終了する</a>
   - <a href="#others">ノートの例を探してみる</a>
 
 <hr>
