@@ -30,7 +30,7 @@
 curl https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/jupyter_example.ipynb -O
 ```
 
-- Jupyter Notebookの起動。
+- JupyterLabの起動。
   - ターミナルで``jupyter lab``を実行。自動的にブラウザが立ち上がり、コマンドを実行したディレクトリの中身が左パネルに表示される。
     - もしブラウザが自動で立ち上がらない場合には、ターミナル上に ``Or copy and paste one of these URLs: http://localhost:8888/?token=長い文字列`` という出力があるはずなので、そのURLをコピーしよう。その後、ブラウザで新規ウィンドウか新規タブを用意し、URLを貼り付けて開こう。
     - ブラウザで「JupyterLab」タイトルが見え、実行したディレクトリの一覧が表示されてるなら、正常に起動している。これ以降はブラウザ内で操作する。
@@ -77,7 +77,7 @@ curl https://ie.u-ryukyu.ac.jp/~tnal/2016/prog1/jupyter_example.ipynb -O
 
 <hr>
 
-## <a name="shutdown">Jupyter Notebook を終了する</a>
+## <a name="shutdown">JupyterLab を終了する</a>
 - ブラウザはいつ閉じてもOK。ただし、**ブラウザを閉じただけではJupyterは終了しません**。
 - ``jupyter lab`` を実行したターミナルを開き、「Ctrl+C」。
 - 終了(shutdown)するか聞いてくるので、「y」。
