@@ -99,17 +99,24 @@
 - ターミナル上で ``git --version`` と入力して実行。
   - Command Not Found と言われるならインストールされてない可能性あり。
     - ``brew install git`` でインストール。
-  - git version 2.20.1 (Apple Git-117) とかgitのバージョン情報が出力されるならok。
+  - git version 2.24.2 (Apple Git-127) とかgitのバージョン情報が出力されるならok。
 
 ### <a name="1">1. Git利用前の設定。</a>
-- ``git config --global user.name "Naruaki TOMA"``
-  - 自分の名前に修正して実行すること。
-- ``git config --global user.email "tnal@ie.u-ryukyu.ac.jp"``
-  - 自分のメールアドレスに修正して実行すること。
-- ~/.zshrc をエディタで開き、下記を追加。（vim好きな人は設定しなくてok）
-  - ``export EDITOR=emacs``
-  - 環境変数EDITORで設定したエディタが、コミット・メッセージを書く際に使われる。
-    - ひょっとするとプログラミング演習1で設定済みかも。確認するには、ターミナル上で「echo $EDITOR」と実行して、emacsが出力されるかどうか確認してみよう。emacsが出力されるならOK。出力されないなら~/.zshrcに上記設定を追加しよう。
+- 設定1：名前の設定。
+  - ``git config --global user.name "Naruaki TOMA"``
+    - 自分の名前に修正して実行すること。
+- 設定2：メールアドレスの設定。
+  - ``git config --global user.email "tnal@ie.u-ryukyu.ac.jp"``
+    - 自分のメールアドレスに修正して実行すること。
+- 設定3：gitコマンド利用時のエイリアスの設定。
+  - エディタで ``~/.gitconfig`` を開き、以下の設定を最下部にコピペして保存。
+```
+[alias]
+        co = checkout
+        st = status
+        br = branch
+        ci = commit
+```
 
 <hr>
 
@@ -160,7 +167,7 @@ cd test
 
 #### <a name="4.4">4.4 問題なければリポジトリに記録。</a>
 - ステージング・エリアに記録したファイルをリポジトリに記録するには``git commit``もしくは``git commit -m "This is first trial."``のように実行する。（好みの方を使って下さい）
-  - git commit と実行すると、環境変数EDITORで指定したエディタが開き、コミット・メッセージを記入する状態になる。この場合、メッセージを書いてエディタを終了すると、commitが始まる。（メッセージを書いて終了しないと、commitされない）
+  - git commit と実行すると、環境変数EDITORで指定したエディタ（標準ではvim）が起動し、コミット・メッセージを記入する状態になる。この場合、メッセージを書いてエディタを終了すると、commitが始まる。（メッセージを書いて終了しないと、commitされない）
   - git commit -m "ほげ" という形式では、エディタを開かずに、ターミナルでメッセージを指定して即記録することが可能。
   - コミット文例: [gitにおけるコミットログ/メッセージ例文集100](http://anond.hatelabo.jp/20160725092419)
 - Q: 間違って commit した場合、これを削除するにはどうしたら良いだろうか？（調べてみよう）
